@@ -101,7 +101,7 @@ const { limit } = require('./database/menu/limit')
 // Load Vcard Contact
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:NazwaðŸ–¤\n' // full name
+            + 'FN:Amrul\n' // full name
             + 'ORG:Owner Bot;\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=62895622002734:+62 895-6220-02734 \n' // WhatsApp ID + phone number
             + 'END:VCARD'
