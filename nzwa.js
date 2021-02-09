@@ -103,7 +103,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:NazwaðŸ–¤\n' // full name
             + 'ORG:Owner Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=12542123926:+1 (254) 212-3926\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=62895622002734:+62 895-6220-02734 \n' // WhatsApp ID + phone number
             + 'END:VCARD'
 prefix = botPrefix
 blocked = []
@@ -403,8 +403,8 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = nzwa.user.jid
-			const ownerNumber = [ownerNumbers]
-			const nomorOwner = [ownerNumbers]
+			const ownerNumber = ["62895622002734"]
+			const nomorOwner = ["62895622002734"]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await nzwa.chats.all()
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
@@ -420,7 +420,7 @@ async function starts() {
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
                         const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
-                        const NomerOwner = '12542123926@s.whatsapp.net'
+                        const NomerOwner = '62895622002734@s.whatsapp.net'
                         const isEventon = isGroup ? event.includes(from) : false
                         const isRegister = checkRegisteredUser(sender)
                         const isAntiLink = isGroup ? antilink.includes(from) : false
